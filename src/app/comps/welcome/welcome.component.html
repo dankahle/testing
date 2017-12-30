@@ -1,0 +1,4 @@
+<h3 class="welcome" >
+  <span *ngIf="userService.isLoggedIn">Welcome, {{userService.user.name}}</span>
+  <span *ngIf="!userService.isLoggedIn">Please log in.</span>
+</h3>
